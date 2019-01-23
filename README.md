@@ -1,6 +1,6 @@
-# WebData_McDonald-s-Sentiments
+# WebDataProject_SentimentAnalysis
  
-Introduction
+#Introduction
 The objective of this project was to analyze the order automation in fast food chains with a special focus on the recent move of McDonald’s for kiosk installation at all their locations in the United States. The analysis is conducted on the Yelp reviews of different McDonald’s locations. We are computing the success of this business decision of McDonald’s based on customer feedback on order automation by gauging their sentiments using Natural Language Processing.
 
 #Procedure
