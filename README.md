@@ -1,16 +1,16 @@
 # WebDataProject_SentimentAnalysis
  
-#Introduction
+### Introduction
 The objective of this project was to analyze the order automation in fast food chains with a special focus on the recent move of McDonald’s for kiosk installation at all their locations in the United States. The analysis is conducted on the Yelp reviews of different McDonald’s locations. We are computing the success of this business decision of McDonald’s based on customer feedback on order automation by gauging their sentiments using Natural Language Processing.
 
-#Procedure
+### Procedure
 The data for the analysis is scraped using ‘Microsoft Azure’ from Yelp and comprises of 454 different McDonald’s, spread across 10 counties of California, with more than 9000+ customer reviews. Using python programming, the stop words (not useful for computing sentiments) are removed from the final feedbacks and further each of the customer feedback is broken into various sentences to analyze the sentiments of different categories. The sentiments are computed by using these sentences and are placed into different categories: Sanitation, Service, Ambience and Staff Behavior. The categorization of feedbacks is done by searching specific keywords in each category. For example, to compute the sentiments of Staff Behavior, words like employee, manager, staff is searched in the feedback, and the sentiments are computed accordingly. The sentiment score based out of these categories are the input variables (X variables) in our model. Furthermore, the word ‘Kiosk’ is searched in the feedback and sentiments based on that are computed to create our independent variable (Y variable). Finally, a multiple linear regression model is trained using these variables which can be used to predict the sentiments of customers for Kiosk installation in McDonald’s at other locations.   
 
-#Insights and Conclusion
+### Insights and Conclusion
 Based on our model results, the p-value obtained for some of the variables were low indicating that there was significant relation between these variables and sentiments for Kiosk installation. For example, the staff behavior, with a very less p-value, is one of the major variables to predict Kiosk installation. This can be explained that a customer can choose to order from Kiosk in case of improper/rude behavior by the staff as was mentioned in many of the customer feedbacks as well. Hence, these variables can be taken into consideration before installing any further Kiosks for any McDonald’s chain.
 
-#Recommendations
+### Recommendations
 Based on articles by Business Insider, McDonald’s has planned to install the Kiosks at every location in the United States by 2020 by rolling out Kiosks at 1,000 locations every quarter. With an average cost of $3500 per Kiosk and 4 Kiosks at each location for each Kiosk, it’s a huge opportunity to assist McDonald’s in predicting whether the customer will have positive emotions to adapt to such a change.
 
-#Limitations
+### Limitations
 As there is a limit to scrape the data from Yelp before the IP gets blocked, hence it was a challenging task to scrape data for 400+ restaurants. Moreover, the sentiments were calculated using limited calls provided by ‘Microsoft Azure’ on each of the feedback multiple times (~36k sentiments computed) and approximately 3% of the customers provide feedback on Kiosk which further adds to the limitation in our model results. Hence, data for more restaurants can help to train the model better with and more accurate sentiments of customers for Kiosks installation.
